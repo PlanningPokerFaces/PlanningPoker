@@ -1,0 +1,21 @@
+﻿@using PlanningPoker.Website.Components.Basics
+@using PlanningPoker.Website.Components.Composites
+@inherits LayoutComponentBase
+
+<main>
+    <ErrorBoundaryWithDetails>
+        @Body
+    </ErrorBoundaryWithDetails>
+</main>
+<div id="event-logger">
+    <EventLogger/>
+</div>
+<div id="footer-text">
+    by Matthias, Denis & Alain
+</div>
+
+<div id="blazor-error-ui">
+    An unhandled error has occurred.
+    <a href="" class="reload">Reload</a>
+    <a class="dismiss">🗙</a>
+</div>

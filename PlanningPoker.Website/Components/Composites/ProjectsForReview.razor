@@ -1,0 +1,11 @@
+<div class="container" >
+    <ul>
+        @foreach (var projectName in Projects)
+        {
+            <li class="project-name @(IsProjectSelected(projectName) ? "selected" : string.Empty)" @onclick="() => OnProjectClicked(projectName)">
+                @projectName
+            </li>
+        }
+    </ul>
+    <br/>
+</div>

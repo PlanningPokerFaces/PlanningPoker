@@ -1,0 +1,25 @@
+header {
+    position: sticky;
+    height: var(--height-header);
+    box-shadow: var(--box-shadow-below);
+    z-index: 99;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 30px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.game-infos {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}

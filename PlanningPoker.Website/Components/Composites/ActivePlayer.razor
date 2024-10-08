@@ -1,0 +1,9 @@
+@using PlanningPoker.Core.Entities
+<div class="active-player-container">
+    @{
+        foreach (var cardValue in CardValues)
+        {
+            <Card Value="@cardValue" CardChosen="cardIsChosen => CardChosen(cardValue, cardIsChosen)" ClickDisabled="PokerGameData?.GameState is GameState.NoStorySelected or GameState.Revealed" IsChosen="cardValue == ChosenCard"></Card>
+        }
+    }
+</div>

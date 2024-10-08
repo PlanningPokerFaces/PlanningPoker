@@ -1,0 +1,23 @@
+﻿docker-build-push-gitlab:
+  image: docker:dind
+  stage: docker-build
+  when: manual
+  tags:
+    - docker
+  rules:
+      - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH      # Run for all changes to the default branch only
+  variables:
+    IMAGE_NAME: ${CI_REGISTRY_IMAGE}:$CI_COMMIT_SHORT_SHA
+    VER: 1.0-${CI_PIPELINE_ID}
+    GIT_SUBMODULE_STRATEGY: recursive
+  before_script:
+    - echo "Docker registry repo is $CI_REGISTRY_IMAGE"
+    - echo "Docker registry url is $CI_REGISTRY"
+    - echo "Docker registry username is $CI_REGISTRY_USER"
+  timeout: 1h
+  services:
+    - docker:dind
+  script:
+    - docker build -t $IMAGE_NAME -f $PATH_DOCKERFILE .
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - docker push $IMAGE_NAME

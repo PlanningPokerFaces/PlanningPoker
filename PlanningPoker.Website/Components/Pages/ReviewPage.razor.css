@@ -1,0 +1,21 @@
+aside {
+    width: 400px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 10px;
+}
+
+.toggle-switch {
+    display: flex;
+    gap: 10px;
+}

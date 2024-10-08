@@ -1,0 +1,51 @@
+.participant-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+    padding: 10px;
+    position: relative;
+
+    border: gray 1px solid;
+    box-shadow: var(--box-shadow-below);
+
+    &.compact {
+        flex-direction: row;
+        padding: 0;
+        gap: 5px;
+
+        border: none;
+        box-shadow: none;
+    }
+}
+
+img.participant-avatar {
+    border: gray 1px solid;
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+    background-color: lightblue;
+
+    &.compact {
+        height: 30px;
+        width: 30px;
+        border-radius: 30px;
+    }
+}
+
+.scrum-master {
+    visibility: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    &.visible {
+        visibility: visible;
+    }
+}
+
+.compact .scrum-master ::deep svg {
+    width: 16px;
+    height: 16px;
+}

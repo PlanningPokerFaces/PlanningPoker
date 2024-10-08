@@ -1,0 +1,17 @@
+@if (MessageContent is not null)
+{
+    <span class="message-list-container">
+        <span class="messages-clear" @onclick="ClearMessages">🗑️</span>
+        @foreach (var message in messages)
+        {
+            <span class="message-container">
+                <div class="message-header">
+                    <span>@message.Value.Timestamp</span>
+                    <span class="message-title">@message.Value.Title</span>
+                </div>
+                <span class="message-text">@message.Value.Text</span>
+                <span class="message-additional-info">@message.Value.AdditionalInfo</span>
+            </span>
+        }
+    </span>
+}

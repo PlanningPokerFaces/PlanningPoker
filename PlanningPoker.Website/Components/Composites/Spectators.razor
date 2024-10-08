@@ -1,0 +1,16 @@
+@if (SpectatorPersons is null or [])
+{
+    <p>No Spectators here 🥱</p>
+}
+else
+{
+    <div class="spectators">
+        @foreach (var spectator in SpectatorPersons)
+        {
+            <div class="spectator">
+                <img class="avatar" src="@spectator.AvatarUrl" alt="@spectator.Name"/>
+                <p>@spectator.Name</p>
+            </div>
+        }
+    </div>
+}

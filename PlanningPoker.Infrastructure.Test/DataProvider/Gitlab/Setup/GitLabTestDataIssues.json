@@ -1,0 +1,1086 @@
+[
+    {
+        "id": 32559,
+        "iid": 7,
+        "project_id": 10568,
+        "title": "This is a bug",
+        "description": "",
+        "state": "opened",
+        "created_at": "2024-08-29T16:37:40.164+02:00",
+        "updated_at": "2024-08-29T16:37:40.164+02:00",
+        "closed_at": null,
+        "closed_by": null,
+        "labels": [
+            "Scrum: Bug"
+        ],
+        "milestone": {
+            "id": 2210,
+            "iid": 361,
+            "group_id": 15438,
+            "title": "TestData_Sprint1.1",
+            "description": "Test milestone for prefix: Alain_\r\n\r\n\r\nTeam-Capacity: 45.0 SP",
+            "state": "active",
+            "created_at": "2024-07-12T18:32:00.121+02:00",
+            "updated_at": "2024-08-18T14:09:34.196+02:00",
+            "due_date": null,
+            "start_date": null,
+            "expired": false,
+            "web_url": "https://gitlab.ost.ch/groups/pokerfacestestdata/-/milestones/361"
+        },
+        "assignees": [],
+        "author": {
+            "id": 2019,
+            "username": "alain.tappolet",
+            "name": "Alain Tappolet",
+            "state": "active",
+            "locked": false,
+            "avatar_url": "https://gitlab.ost.ch/uploads/-/system/user/avatar/2019/avatar.png",
+            "web_url": "https://gitlab.ost.ch/alain.tappolet"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 0,
+        "merge_requests_count": 0,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.ost.ch/pokerfacestestdata/moreProjectsPlease/-/issues/4",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 0,
+            "completed_count": 0
+        },
+        "has_tasks": true,
+        "task_status": "",
+        "_links": {
+            "self": "https://gitlab.ost.ch/api/v4/projects/10568/issues/4",
+            "notes": "https://gitlab.ost.ch/api/v4/projects/10568/issues/4/notes",
+            "award_emoji": "https://gitlab.ost.ch/api/v4/projects/10568/issues/4/award_emoji",
+            "project": "https://gitlab.ost.ch/api/v4/projects/10568",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#4",
+            "relative": "moreProjectsPlease#4",
+            "full": "pokerfacestestdata/moreProjectsPlease#4"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 32388,
+        "iid": 3,
+        "project_id": 10568,
+        "title": "Issue with valid estimation",
+        "description": "",
+        "state": "opened",
+        "created_at": "2024-08-10T22:37:18.360+02:00",
+        "updated_at": "2024-08-22T23:42:34.377+02:00",
+        "closed_at": null,
+        "closed_by": null,
+        "labels": [
+            "Scrum: SP 5"
+        ],
+        "milestone": {
+            "id": 2210,
+            "iid": 361,
+            "group_id": 15438,
+            "title": "TestData_Sprint1.1",
+            "description": "Test milestone for prefix: Alain_\r\n\r\n\r\nTeam-Capacity: 45.0 SP",
+            "state": "active",
+            "created_at": "2024-07-12T18:32:00.121+02:00",
+            "updated_at": "2024-08-18T14:09:34.196+02:00",
+            "due_date": null,
+            "start_date": null,
+            "expired": false,
+            "web_url": "https://gitlab.ost.ch/groups/pokerfacestestdata/-/milestones/361"
+        },
+        "assignees": [],
+        "author": {
+            "id": 2019,
+            "username": "alain.tappolet",
+            "name": "Alain Tappolet",
+            "state": "active",
+            "locked": false,
+            "avatar_url": "https://gitlab.ost.ch/uploads/-/system/user/avatar/2019/avatar.png",
+            "web_url": "https://gitlab.ost.ch/alain.tappolet"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 0,
+        "merge_requests_count": 0,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.ost.ch/pokerfacestestdata/moreProjectsPlease/-/issues/3",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 0,
+            "completed_count": 0
+        },
+        "has_tasks": true,
+        "task_status": "",
+        "_links": {
+            "self": "https://gitlab.ost.ch/api/v4/projects/10568/issues/3",
+            "notes": "https://gitlab.ost.ch/api/v4/projects/10568/issues/3/notes",
+            "award_emoji": "https://gitlab.ost.ch/api/v4/projects/10568/issues/3/award_emoji",
+            "project": "https://gitlab.ost.ch/api/v4/projects/10568",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#3",
+            "relative": "moreProjectsPlease#3",
+            "full": "pokerfacestestdata/moreProjectsPlease#3"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 32386,
+        "iid": 1,
+        "project_id": 10568,
+        "title": "Issue with valid tb estimation",
+        "description": "",
+        "state": "opened",
+        "created_at": "2024-08-10T22:36:57.111+02:00",
+        "updated_at": "2024-08-27T22:48:34.893+02:00",
+        "closed_at": null,
+        "closed_by": null,
+        "labels": [
+            "Scrum: tb 16h"
+        ],
+        "milestone": {
+            "id": 2210,
+            "iid": 361,
+            "group_id": 15438,
+            "title": "TestData_Sprint1.1",
+            "description": "Test milestone for prefix: Alain_\r\n\r\n\r\nTeam-Capacity: 45.0 SP",
+            "state": "active",
+            "created_at": "2024-07-12T18:32:00.121+02:00",
+            "updated_at": "2024-08-18T14:09:34.196+02:00",
+            "due_date": null,
+            "start_date": null,
+            "expired": false,
+            "web_url": "https://gitlab.ost.ch/groups/pokerfacestestdata/-/milestones/361"
+        },
+        "assignees": [],
+        "author": {
+            "id": 2019,
+            "username": "alain.tappolet",
+            "name": "Alain Tappolet",
+            "state": "active",
+            "locked": false,
+            "avatar_url": "https://gitlab.ost.ch/uploads/-/system/user/avatar/2019/avatar.png",
+            "web_url": "https://gitlab.ost.ch/alain.tappolet"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 0,
+        "merge_requests_count": 0,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.ost.ch/pokerfacestestdata/moreProjectsPlease/-/issues/1",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 0,
+            "completed_count": 0
+        },
+        "has_tasks": true,
+        "task_status": "",
+        "_links": {
+            "self": "https://gitlab.ost.ch/api/v4/projects/10568/issues/1",
+            "notes": "https://gitlab.ost.ch/api/v4/projects/10568/issues/1/notes",
+            "award_emoji": "https://gitlab.ost.ch/api/v4/projects/10568/issues/1/award_emoji",
+            "project": "https://gitlab.ost.ch/api/v4/projects/10568",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#1",
+            "relative": "moreProjectsPlease#1",
+            "full": "pokerfacestestdata/moreProjectsPlease#1"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 32197,
+        "iid": 1268,
+        "project_id": 10031,
+        "title": "Issue with no estimation",
+        "description": "User Story without SP\nInspect anything brought into the house mess up all the toilet paper climb into cupboard and lick the salt off rice cakes bite nose of your human sniff sniff wake up wander around the house making large amounts of noise jump on top of your human's bed and fall asleep again. Stuff and things. Break lamps and curl up into a ball why dog in house? i'm the sole ruler of this home and its inhabitants smelly, stupid dogs, inferior furballs time for night-hunt, human freakout so sit as close as possible to warm fire without sitting on cold floor love blinks and purr purr purr purr yawn but cough hairball, eat toilet paper. Stare at ceiling light when owners are asleep, cry for no apparent reason. Check cat door for ambush 10 times before coming in. Hate dogs get my claw stuck in the dog's ear intently stare at the same spot annoy owner until he gives you food say meow repeatedly until belly rubs, feels good skid on floor, crash into wall for cat walks in keyboard . Scratch so owner bleeds stare at imaginary bug. Purr like a car engine oh yes, there is my human slave woman she does best pats ever that all i like about her hiss meow lick left leg for ninety minutes, still dirty but carrying out surveillance on the neighbour's dog but mark territory, so scratch my tummy actually i hate you now fight me. Attack feet meowsiers. Suddenly go on wild-eyed crazy rampage. Give attitude demand to have some of whatever the human is cooking, then sniff the offering and walk away kitten is playing with dead mouse scratch the furniture but pretend not to be evil and woops poop hanging from butt must get rid run run around house drag poop on floor maybe it comes off woops left brown marks on floor human slave clean lick butt now or go crazy with excitement when plates are clanked together signalling the arrival of cat food. Ooh, are those your $250 dollar sandals? lemme use that as my litter box murder hooman toes cat slap dog in face murr i hate humans they are so annoying. Who's the baby. Sit on the laptop bawl under human beds yet claw your carpet in places everyone can see - why hide my amazing artistic clawing skills? and knock dish off table head butt cant eat out of my own dish or human clearly uses close to one life a night no one naps that long so i revive by standing on chestawaken!. Human is in bath tub, emergency! drowning! meooowww! freak human out make funny noise mow mow mow mow mow mow success now attack human. And sometimes switches in french and say \"miaou\" just because well why not cats are a queer kind of folk yet paw your face to wake you up in the morning.\n\nMeow ignore the squirrels, you'll never catch them anyway. The cat was chasing the mouse sit on human for poop in litter box, scratch the walls. Behind the couch purr when give birth. Bite plants. Meow all night lick master's hand at first then bite because im moody.\n\nMeow poop on grasses but cats go for world domination cats are a queer kind of folk, but carrying out surveillance on the neighbour's dog or side-eyes your \"jerk\" other hand while being petted or purrr purr littel cat, little cat purr purr. Need to chase tail yowling nonstop the whole night. Sit on the laptop where is my slave? I'm getting hungry hide from vacuum cleaner. Nya nya nyan do not try to mix old food with new one to fool me!. Lick butt and make a weird face. Stand with legs in litter box, but poop outside bathe private parts with tongue then lick owner's face yet purr like an angel get video posted to internet for chasing red dot where is my slave? I'm getting hungry, sit on human they not getting up ever. Only use one corner of the litter box mrow but get scared by doggo also cucumerro but making bread on the bathrobe so attack curtains. Destroy couch whatever for sleep on dog bed, force dog to sleep on floor fish i must find my red catnip fishy fish so please let me outside pouty face yay! wait, it's cold out please let me inside pouty face oh, thank you rub against mommy's leg oh it looks so nice out, please let me outside again the neighbor cat was mean to me please let me back inside, so jump around on couch, meow constantly until given food, meow to be let out. Eat the fat cats food. Swat at dog.",
+        "state": "opened",
+        "created_at": "2024-07-12T18:32:05.819+02:00",
+        "updated_at": "2024-08-31T13:05:52.808+02:00",
+        "closed_at": null,
+        "closed_by": null,
+        "labels": [
+            "Resetable",
+            "Scrum: User Story"
+        ],
+        "milestone": {
+            "id": 2210,
+            "iid": 361,
+            "group_id": 15438,
+            "title": "TestData_Sprint1.1",
+            "description": "Test milestone for prefix: Alain_\r\n\r\n\r\nTeam-Capacity: 45.0 SP",
+            "state": "active",
+            "created_at": "2024-07-12T18:32:00.121+02:00",
+            "updated_at": "2024-08-18T14:09:34.196+02:00",
+            "due_date": null,
+            "start_date": null,
+            "expired": false,
+            "web_url": "https://gitlab.ost.ch/groups/pokerfacestestdata/-/milestones/361"
+        },
+        "assignees": [
+            {
+                "id": 2019,
+                "username": "alain.tappolet",
+                "name": "Alain Tappolet",
+                "state": "active",
+                "locked": false,
+                "avatar_url": "https://gitlab.ost.ch/uploads/-/system/user/avatar/2019/avatar.png",
+                "web_url": "https://gitlab.ost.ch/alain.tappolet"
+            }
+        ],
+        "author": {
+            "id": 3892,
+            "username": "group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1",
+            "name": "ApplicationAccess20240621",
+            "state": "active",
+            "locked": false,
+            "avatar_url": "https://secure.gravatar.com/avatar/029f1e2d11544ca269cb1f2c761098ce169e5323e73ac280c36e5e20a4c19f25?s=80&d=identicon",
+            "web_url": "https://gitlab.ost.ch/group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1"
+        },
+        "type": "ISSUE",
+        "assignee": {
+            "id": 2019,
+            "username": "alain.tappolet",
+            "name": "Alain Tappolet",
+            "state": "active",
+            "locked": false,
+            "avatar_url": "https://gitlab.ost.ch/uploads/-/system/user/avatar/2019/avatar.png",
+            "web_url": "https://gitlab.ost.ch/alain.tappolet"
+        },
+        "user_notes_count": 0,
+        "merge_requests_count": 0,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.ost.ch/pokerfacestestdata/testdata/-/issues/1268",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 0,
+            "completed_count": 0
+        },
+        "has_tasks": true,
+        "task_status": "0 of 0 checklist items completed",
+        "_links": {
+            "self": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1268",
+            "notes": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1268/notes",
+            "award_emoji": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1268/award_emoji",
+            "project": "https://gitlab.ost.ch/api/v4/projects/10031",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#1268",
+            "relative": "testdata#1268",
+            "full": "pokerfacestestdata/testdata#1268"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 32196,
+        "iid": 1267,
+        "project_id": 10031,
+        "title": "Issue is already estimated",
+        "description": "User Story with SP\n\n> Lorum Ipsum tralala\n\n| 3 | 4 | 5 | 8 |\n|---|---|---|---|\n| öas | öas | ö |  |\n| 5 | 3 | 126 | 68 |\n| SJF | ÖAÖF | ÖFAS | ADFÖA |\n| %&/( | éàà£èéöä |  |  |\n\nsafd\n\nv\n\n![image.png](/uploads/c954bacc98ca71645d7bce8ea3486027/image.png)",
+        "state": "opened",
+        "created_at": "2024-07-12T18:32:05.548+02:00",
+        "updated_at": "2024-08-26T21:34:36.530+02:00",
+        "closed_at": null,
+        "closed_by": null,
+        "labels": [
+            "Scrum: SP 8",
+            "Scrum: User Story"
+        ],
+        "milestone": {
+            "id": 2210,
+            "iid": 361,
+            "group_id": 15438,
+            "title": "TestData_Sprint1.1",
+            "description": "Test milestone for prefix: Alain_\r\n\r\n\r\nTeam-Capacity: 45.0 SP",
+            "state": "active",
+            "created_at": "2024-07-12T18:32:00.121+02:00",
+            "updated_at": "2024-08-18T14:09:34.196+02:00",
+            "due_date": null,
+            "start_date": null,
+            "expired": false,
+            "web_url": "https://gitlab.ost.ch/groups/pokerfacestestdata/-/milestones/361"
+        },
+        "assignees": [],
+        "author": {
+            "id": 3892,
+            "username": "group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1",
+            "name": "ApplicationAccess20240621",
+            "state": "active",
+            "locked": false,
+            "avatar_url": "https://secure.gravatar.com/avatar/029f1e2d11544ca269cb1f2c761098ce169e5323e73ac280c36e5e20a4c19f25?s=80&d=identicon",
+            "web_url": "https://gitlab.ost.ch/group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 0,
+        "merge_requests_count": 0,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.ost.ch/pokerfacestestdata/testdata/-/issues/1267",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 0,
+            "completed_count": 0
+        },
+        "has_tasks": true,
+        "task_status": "0 of 0 checklist items completed",
+        "_links": {
+            "self": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1267",
+            "notes": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1267/notes",
+            "award_emoji": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1267/award_emoji",
+            "project": "https://gitlab.ost.ch/api/v4/projects/10031",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#1267",
+            "relative": "testdata#1267",
+            "full": "pokerfacestestdata/testdata#1267"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 32195,
+        "iid": 1266,
+        "project_id": 10031,
+        "title": "Epic",
+        "description": "Epic",
+        "state": "opened",
+        "created_at": "2024-07-12T18:32:05.304+02:00",
+        "updated_at": "2024-08-27T21:40:27.121+02:00",
+        "closed_at": null,
+        "closed_by": null,
+        "labels": [
+            "Resetable",
+            "Scrum: Epic"
+        ],
+        "milestone": {
+            "id": 2210,
+            "iid": 361,
+            "group_id": 15438,
+            "title": "TestData_Sprint1.1",
+            "description": "Test milestone for prefix: Alain_\r\n\r\n\r\nTeam-Capacity: 45.0 SP",
+            "state": "active",
+            "created_at": "2024-07-12T18:32:00.121+02:00",
+            "updated_at": "2024-08-18T14:09:34.196+02:00",
+            "due_date": null,
+            "start_date": null,
+            "expired": false,
+            "web_url": "https://gitlab.ost.ch/groups/pokerfacestestdata/-/milestones/361"
+        },
+        "assignees": [],
+        "author": {
+            "id": 3892,
+            "username": "group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1",
+            "name": "ApplicationAccess20240621",
+            "state": "active",
+            "locked": false,
+            "avatar_url": "https://secure.gravatar.com/avatar/029f1e2d11544ca269cb1f2c761098ce169e5323e73ac280c36e5e20a4c19f25?s=80&d=identicon",
+            "web_url": "https://gitlab.ost.ch/group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 0,
+        "merge_requests_count": 0,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.ost.ch/pokerfacestestdata/testdata/-/issues/1266",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 0,
+            "completed_count": 0
+        },
+        "has_tasks": true,
+        "task_status": "0 of 0 checklist items completed",
+        "_links": {
+            "self": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1266",
+            "notes": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1266/notes",
+            "award_emoji": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1266/award_emoji",
+            "project": "https://gitlab.ost.ch/api/v4/projects/10031",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#1266",
+            "relative": "testdata#1266",
+            "full": "pokerfacestestdata/testdata#1266"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 32194,
+        "iid": 1265,
+        "project_id": 10031,
+        "title": "Extra Task to estimate",
+        "description": "Extra Task to estimate",
+        "state": "opened",
+        "created_at": "2024-07-12T18:32:05.067+02:00",
+        "updated_at": "2024-08-31T11:51:22.195+02:00",
+        "closed_at": null,
+        "closed_by": null,
+        "labels": [
+            "Resetable",
+            "Scrum: Extra Task"
+        ],
+        "milestone": {
+            "id": 2210,
+            "iid": 361,
+            "group_id": 15438,
+            "title": "TestData_Sprint1.1",
+            "description": "Test milestone for prefix: Alain_\r\n\r\n\r\nTeam-Capacity: 45.0 SP",
+            "state": "active",
+            "created_at": "2024-07-12T18:32:00.121+02:00",
+            "updated_at": "2024-08-18T14:09:34.196+02:00",
+            "due_date": null,
+            "start_date": null,
+            "expired": false,
+            "web_url": "https://gitlab.ost.ch/groups/pokerfacestestdata/-/milestones/361"
+        },
+        "assignees": [],
+        "author": {
+            "id": 3892,
+            "username": "group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1",
+            "name": "ApplicationAccess20240621",
+            "state": "active",
+            "locked": false,
+            "avatar_url": "https://secure.gravatar.com/avatar/029f1e2d11544ca269cb1f2c761098ce169e5323e73ac280c36e5e20a4c19f25?s=80&d=identicon",
+            "web_url": "https://gitlab.ost.ch/group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 0,
+        "merge_requests_count": 0,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.ost.ch/pokerfacestestdata/testdata/-/issues/1265",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 0,
+            "completed_count": 0
+        },
+        "has_tasks": true,
+        "task_status": "0 of 0 checklist items completed",
+        "_links": {
+            "self": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1265",
+            "notes": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1265/notes",
+            "award_emoji": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1265/award_emoji",
+            "project": "https://gitlab.ost.ch/api/v4/projects/10031",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#1265",
+            "relative": "testdata#1265",
+            "full": "pokerfacestestdata/testdata#1265"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 32193,
+        "iid": 1264,
+        "project_id": 10031,
+        "title": "Extra Task is already Time Boxed",
+        "description": "Extra Task with tb",
+        "state": "opened",
+        "created_at": "2024-07-12T18:32:04.811+02:00",
+        "updated_at": "2024-07-12T18:32:04.811+02:00",
+        "closed_at": null,
+        "closed_by": null,
+        "labels": [
+            "Scrum: Extra Task",
+            "Scrum: tb 16h"
+        ],
+        "milestone": {
+            "id": 2210,
+            "iid": 361,
+            "group_id": 15438,
+            "title": "TestData_Sprint1.1",
+            "description": "Test milestone for prefix: Alain_\r\n\r\n\r\nTeam-Capacity: 45.0 SP",
+            "state": "active",
+            "created_at": "2024-07-12T18:32:00.121+02:00",
+            "updated_at": "2024-08-18T14:09:34.196+02:00",
+            "due_date": null,
+            "start_date": null,
+            "expired": false,
+            "web_url": "https://gitlab.ost.ch/groups/pokerfacestestdata/-/milestones/361"
+        },
+        "assignees": [],
+        "author": {
+            "id": 3892,
+            "username": "group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1",
+            "name": "ApplicationAccess20240621",
+            "state": "active",
+            "locked": false,
+            "avatar_url": "https://secure.gravatar.com/avatar/029f1e2d11544ca269cb1f2c761098ce169e5323e73ac280c36e5e20a4c19f25?s=80&d=identicon",
+            "web_url": "https://gitlab.ost.ch/group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 0,
+        "merge_requests_count": 0,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.ost.ch/pokerfacestestdata/testdata/-/issues/1264",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 0,
+            "completed_count": 0
+        },
+        "has_tasks": true,
+        "task_status": "0 of 0 checklist items completed",
+        "_links": {
+            "self": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1264",
+            "notes": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1264/notes",
+            "award_emoji": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1264/award_emoji",
+            "project": "https://gitlab.ost.ch/api/v4/projects/10031",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#1264",
+            "relative": "testdata#1264",
+            "full": "pokerfacestestdata/testdata#1264"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 32192,
+        "iid": 1263,
+        "project_id": 10031,
+        "title": "Grooming Task to estimate",
+        "description": "Grooming Task",
+        "state": "opened",
+        "created_at": "2024-07-12T18:32:04.563+02:00",
+        "updated_at": "2024-08-27T21:38:57.455+02:00",
+        "closed_at": null,
+        "closed_by": null,
+        "labels": [
+            "Resetable",
+            "Scrum: Grooming Task"
+        ],
+        "milestone": {
+            "id": 2210,
+            "iid": 361,
+            "group_id": 15438,
+            "title": "TestData_Sprint1.1",
+            "description": "Test milestone for prefix: Alain_\r\n\r\n\r\nTeam-Capacity: 45.0 SP",
+            "state": "active",
+            "created_at": "2024-07-12T18:32:00.121+02:00",
+            "updated_at": "2024-08-18T14:09:34.196+02:00",
+            "due_date": null,
+            "start_date": null,
+            "expired": false,
+            "web_url": "https://gitlab.ost.ch/groups/pokerfacestestdata/-/milestones/361"
+        },
+        "assignees": [],
+        "author": {
+            "id": 3892,
+            "username": "group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1",
+            "name": "ApplicationAccess20240621",
+            "state": "active",
+            "locked": false,
+            "avatar_url": "https://secure.gravatar.com/avatar/029f1e2d11544ca269cb1f2c761098ce169e5323e73ac280c36e5e20a4c19f25?s=80&d=identicon",
+            "web_url": "https://gitlab.ost.ch/group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 0,
+        "merge_requests_count": 0,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.ost.ch/pokerfacestestdata/testdata/-/issues/1263",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 0,
+            "completed_count": 0
+        },
+        "has_tasks": true,
+        "task_status": "0 of 0 checklist items completed",
+        "_links": {
+            "self": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1263",
+            "notes": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1263/notes",
+            "award_emoji": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1263/award_emoji",
+            "project": "https://gitlab.ost.ch/api/v4/projects/10031",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#1263",
+            "relative": "testdata#1263",
+            "full": "pokerfacestestdata/testdata#1263"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 32199,
+        "iid": 1271,
+        "project_id": 10031,
+        "title": "Grooming Task has already story points",
+        "description": "Grooming Task",
+        "state": "closed",
+        "created_at": "2024-07-12T18:32:04.289+02:00",
+        "updated_at": "2024-08-31T13:06:22.098+02:00",
+        "closed_at": "2024-08-31T13:06:22.092+02:00",
+        "closed_by": {
+            "id": 2019,
+            "username": "alain.tappolet",
+            "name": "Alain Tappolet",
+            "state": "active",
+            "locked": false,
+            "avatar_url": "https://gitlab.ost.ch/uploads/-/system/user/avatar/2019/avatar.png",
+            "web_url": "https://gitlab.ost.ch/alain.tappolet"
+        },
+        "labels": [
+            "Scrum: Grooming Task",
+            "Scrum: SP 20"
+        ],
+        "milestone": {
+            "id": 2210,
+            "iid": 361,
+            "group_id": 15438,
+            "title": "TestData_Sprint1.1",
+            "description": "Test milestone for prefix: Alain_\r\n\r\n\r\nTeam-Capacity: 45.0 SP",
+            "state": "active",
+            "created_at": "2024-07-12T18:32:00.121+02:00",
+            "updated_at": "2024-08-18T14:09:34.196+02:00",
+            "due_date": null,
+            "start_date": null,
+            "expired": false,
+            "web_url": "https://gitlab.ost.ch/groups/pokerfacestestdata/-/milestones/361"
+        },
+        "assignees": [
+            {
+                "id": 2019,
+                "username": "alain.tappolet",
+                "name": "Alain Tappolet",
+                "state": "active",
+                "locked": false,
+                "avatar_url": "https://gitlab.ost.ch/uploads/-/system/user/avatar/2019/avatar.png",
+                "web_url": "https://gitlab.ost.ch/alain.tappolet"
+            }
+        ],
+        "author": {
+            "id": 3892,
+            "username": "group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1",
+            "name": "ApplicationAccess20240621",
+            "state": "active",
+            "locked": false,
+            "avatar_url": "https://secure.gravatar.com/avatar/029f1e2d11544ca269cb1f2c761098ce169e5323e73ac280c36e5e20a4c19f25?s=80&d=identicon",
+            "web_url": "https://gitlab.ost.ch/group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1"
+        },
+        "type": "ISSUE",
+        "assignee": {
+            "id": 2019,
+            "username": "alain.tappolet",
+            "name": "Alain Tappolet",
+            "state": "active",
+            "locked": false,
+            "avatar_url": "https://gitlab.ost.ch/uploads/-/system/user/avatar/2019/avatar.png",
+            "web_url": "https://gitlab.ost.ch/alain.tappolet"
+        },
+        "user_notes_count": 0,
+        "merge_requests_count": 0,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.ost.ch/pokerfacestestdata/testdata/-/issues/1271",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 0,
+            "completed_count": 0
+        },
+        "has_tasks": true,
+        "task_status": "0 of 0 checklist items completed",
+        "_links": {
+            "self": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1271",
+            "notes": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1271/notes",
+            "award_emoji": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1271/award_emoji",
+            "project": "https://gitlab.ost.ch/api/v4/projects/10031",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#1271",
+            "relative": "testdata#1271",
+            "full": "pokerfacestestdata/testdata#1271"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 32191,
+        "iid": 1262,
+        "project_id": 10031,
+        "title": "Grooming Task is already time boxed",
+        "description": "Grooming Task",
+        "state": "closed",
+        "created_at": "2024-07-12T18:32:04.289+02:00",
+        "updated_at": "2024-08-31T13:06:22.098+02:00",
+        "closed_at": "2024-08-31T13:06:22.092+02:00",
+        "closed_by": {
+            "id": 2019,
+            "username": "alain.tappolet",
+            "name": "Alain Tappolet",
+            "state": "active",
+            "locked": false,
+            "avatar_url": "https://gitlab.ost.ch/uploads/-/system/user/avatar/2019/avatar.png",
+            "web_url": "https://gitlab.ost.ch/alain.tappolet"
+        },
+        "labels": [
+            "Scrum: Grooming Task",
+            "Scrum: tb 16h"
+        ],
+        "milestone": {
+            "id": 2210,
+            "iid": 361,
+            "group_id": 15438,
+            "title": "TestData_Sprint1.1",
+            "description": "Test milestone for prefix: Alain_\r\n\r\n\r\nTeam-Capacity: 45.0 SP",
+            "state": "active",
+            "created_at": "2024-07-12T18:32:00.121+02:00",
+            "updated_at": "2024-08-18T14:09:34.196+02:00",
+            "due_date": null,
+            "start_date": null,
+            "expired": false,
+            "web_url": "https://gitlab.ost.ch/groups/pokerfacestestdata/-/milestones/361"
+        },
+        "assignees": [
+            {
+                "id": 2019,
+                "username": "alain.tappolet",
+                "name": "Alain Tappolet",
+                "state": "active",
+                "locked": false,
+                "avatar_url": "https://gitlab.ost.ch/uploads/-/system/user/avatar/2019/avatar.png",
+                "web_url": "https://gitlab.ost.ch/alain.tappolet"
+            }
+        ],
+        "author": {
+            "id": 3892,
+            "username": "group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1",
+            "name": "ApplicationAccess20240621",
+            "state": "active",
+            "locked": false,
+            "avatar_url": "https://secure.gravatar.com/avatar/029f1e2d11544ca269cb1f2c761098ce169e5323e73ac280c36e5e20a4c19f25?s=80&d=identicon",
+            "web_url": "https://gitlab.ost.ch/group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1"
+        },
+        "type": "ISSUE",
+        "assignee": {
+            "id": 2019,
+            "username": "alain.tappolet",
+            "name": "Alain Tappolet",
+            "state": "active",
+            "locked": false,
+            "avatar_url": "https://gitlab.ost.ch/uploads/-/system/user/avatar/2019/avatar.png",
+            "web_url": "https://gitlab.ost.ch/alain.tappolet"
+        },
+        "user_notes_count": 0,
+        "merge_requests_count": 0,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.ost.ch/pokerfacestestdata/testdata/-/issues/1262",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 0,
+            "completed_count": 0
+        },
+        "has_tasks": true,
+        "task_status": "0 of 0 checklist items completed",
+        "_links": {
+            "self": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1262",
+            "notes": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1262/notes",
+            "award_emoji": "https://gitlab.ost.ch/api/v4/projects/10031/issues/1262/award_emoji",
+            "project": "https://gitlab.ost.ch/api/v4/projects/10031",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#1262",
+            "relative": "testdata#1262",
+            "full": "pokerfacestestdata/testdata#1262"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    },
+    {
+        "id": 32190,
+        "iid": 1261,
+        "project_id": 10031,
+        "title": "Issue with invalid, non numeric estimation",
+        "description": null,
+        "state": "opened",
+        "created_at": "2024-07-12T18:32:03.978+02:00",
+        "updated_at": "2024-08-29T17:12:34.460+02:00",
+        "closed_at": null,
+        "closed_by": null,
+        "labels": [
+            "Garbage",
+            "Resetable",
+            "Scrum: SP something useless (project label)"
+        ],
+        "milestone": {
+            "id": 2210,
+            "iid": 361,
+            "group_id": 15438,
+            "title": "TestData_Sprint1.1",
+            "description": "Test milestone for prefix: Alain_\r\n\r\n\r\nTeam-Capacity: 45.0 SP",
+            "state": "active",
+            "created_at": "2024-07-12T18:32:00.121+02:00",
+            "updated_at": "2024-08-18T14:09:34.196+02:00",
+            "due_date": null,
+            "start_date": null,
+            "expired": false,
+            "web_url": "https://gitlab.ost.ch/groups/pokerfacestestdata/-/milestones/361"
+        },
+        "assignees": [],
+        "author": {
+            "id": 3892,
+            "username": "group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1",
+            "name": "ApplicationAccess20240621",
+            "state": "active",
+            "locked": false,
+            "avatar_url": "https://secure.gravatar.com/avatar/029f1e2d11544ca269cb1f2c761098ce169e5323e73ac280c36e5e20a4c19f25?s=80&d=identicon",
+            "web_url": "https://gitlab.ost.ch/group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1"
+        }
+    },
+    {
+        "id": 321901,
+        "iid": 12611,
+        "project_id": 10031,
+        "title": "Issue with invalid tb estimation",
+        "description": null,
+        "state": "opened",
+        "created_at": "2024-07-12T18:32:03.978+02:00",
+        "updated_at": "2024-08-29T17:12:34.460+02:00",
+        "closed_at": null,
+        "closed_by": null,
+        "labels": [
+            "Garbage",
+            "Resetable",
+            "Scrum: tb 3h"
+        ],
+        "milestone": {
+            "id": 2210,
+            "iid": 361,
+            "group_id": 15438,
+            "title": "TestData_Sprint1.1",
+            "description": "Test milestone for prefix: Alain_\r\n\r\n\r\nTeam-Capacity: 45.0 SP",
+            "state": "active",
+            "created_at": "2024-07-12T18:32:00.121+02:00",
+            "updated_at": "2024-08-18T14:09:34.196+02:00",
+            "due_date": null,
+            "start_date": null,
+            "expired": false,
+            "web_url": "https://gitlab.ost.ch/groups/pokerfacestestdata/-/milestones/361"
+        },
+        "assignees": [],
+        "author": {
+            "id": 3892,
+            "username": "group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1",
+            "name": "ApplicationAccess20240621",
+            "state": "active",
+            "locked": false,
+            "avatar_url": "https://secure.gravatar.com/avatar/029f1e2d11544ca269cb1f2c761098ce169e5323e73ac280c36e5e20a4c19f25?s=80&d=identicon",
+            "web_url": "https://gitlab.ost.ch/group_15438_bot_f192f9d0b4e06c8de8903c6b60f841d1"
+        }
+    },
+    {
+        "id": 323882,
+        "iid": 32,
+        "project_id": 10569,
+        "title": "Issue with valid estimation from another project and ms",
+        "description": "",
+        "state": "opened",
+        "created_at": "2024-08-10T22:37:18.360+02:00",
+        "updated_at": "2024-08-22T23:42:34.377+02:00",
+        "closed_at": null,
+        "closed_by": null,
+        "labels": [
+            "Scrum: SP 5"
+        ],
+        "milestone": {
+            "id": 22102,
+            "iid": 3612,
+            "group_id": 15438,
+            "title": "TestData_Sprint1.12",
+            "description": "Test milestone for prefix: Alain_\r\n\r\n\r\nTeam-Capacity: 45.0 SP",
+            "state": "active",
+            "created_at": "2024-07-12T18:32:00.121+02:00",
+            "updated_at": "2024-08-18T14:09:34.196+02:00",
+            "due_date": null,
+            "start_date": null,
+            "expired": false,
+            "web_url": "https://gitlab.ost.ch/groups/pokerfacestestdata/-/milestones/361"
+        },
+        "assignees": [],
+        "author": {
+            "id": 2019,
+            "username": "alain.tappolet",
+            "name": "Alain Tappolet",
+            "state": "active",
+            "locked": false,
+            "avatar_url": "https://gitlab.ost.ch/uploads/-/system/user/avatar/2019/avatar.png",
+            "web_url": "https://gitlab.ost.ch/alain.tappolet"
+        },
+        "type": "ISSUE",
+        "assignee": null,
+        "user_notes_count": 0,
+        "merge_requests_count": 0,
+        "upvotes": 0,
+        "downvotes": 0,
+        "due_date": null,
+        "confidential": false,
+        "discussion_locked": null,
+        "issue_type": "issue",
+        "web_url": "https://gitlab.ost.ch/pokerfacestestdata/moreProjectsPlease/-/issues/3",
+        "time_stats": {
+            "time_estimate": 0,
+            "total_time_spent": 0,
+            "human_time_estimate": null,
+            "human_total_time_spent": null
+        },
+        "task_completion_status": {
+            "count": 0,
+            "completed_count": 0
+        },
+        "has_tasks": true,
+        "task_status": "",
+        "_links": {
+            "self": "https://gitlab.ost.ch/api/v4/projects/10568/issues/3",
+            "notes": "https://gitlab.ost.ch/api/v4/projects/10568/issues/3/notes",
+            "award_emoji": "https://gitlab.ost.ch/api/v4/projects/10568/issues/3/award_emoji",
+            "project": "https://gitlab.ost.ch/api/v4/projects/10568",
+            "closed_as_duplicate_of": null
+        },
+        "references": {
+            "short": "#3",
+            "relative": "moreProjectsPlease#3",
+            "full": "pokerfacestestdata/moreProjectsPlease#3"
+        },
+        "severity": "UNKNOWN",
+        "moved_to_id": null,
+        "service_desk_reply_to": null
+    }
+]

@@ -1,0 +1,11 @@
+<Project>
+    <PropertyGroup>
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+        <NoWarn>$(NoWarn);MA0002;MA0004;MA0006;MA0007;MA0009;MA0011;MA0047;MA0048;MA0051;S1118;S1135;S2699;S3881;S3903;S6602;S6608;S6667;S6966</NoWarn>
+        <WarningsAsErrors>S2629</WarningsAsErrors>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Meziantou.Analyzer" PrivateAssets="All"/>
+        <PackageReference Include="SonarAnalyzer.CSharp" PrivateAssets="All"/>
+    </ItemGroup>
+</Project>

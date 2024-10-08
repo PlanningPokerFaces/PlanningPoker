@@ -1,0 +1,18 @@
+<ErrorBoundary>
+    <ChildContent>
+        @ChildContent
+    </ChildContent>
+    <ErrorContent>
+        <div class="error-content">
+            <img src="images/sad-poker-card.png" alt="Oops">
+            <h2>Oops!</h2>
+            <p>It looks like something went wrong. Please report this to the hackers who wrote this app and try again later.</p>
+            @if (!Environment.IsProduction())
+            {
+                <p class="stacktrace">
+                    @context.ToString()
+                </p>
+            }
+        </div>
+    </ErrorContent>
+</ErrorBoundary>

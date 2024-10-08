@@ -1,0 +1,13 @@
+<div @attributes="@UnmatchedAttributes">
+    <div class="summary">
+        <span>Story Points: @GetSumOfStoryPoints()</span>
+        <span>Time Boxed h: @GetSumOfTimeBoxedPoints()</span>
+        <span>Bugs: @GetSumOfBugs()</span>
+        <span>Extra Task SP: @GetSumOfExtraTaskStoryPoints()</span>
+        <span>Extra Task tb: @GetSumOfExtraTaskTimeBoxed()</span>
+    </div>
+    @foreach (var reviewStory in ReviewData.StoryDataList)
+    {
+        <StoryDetails Story="reviewStory" ShowDescription="false" ShowProjectTitle="ShowProjectTitle"></StoryDetails>
+    }
+</div>

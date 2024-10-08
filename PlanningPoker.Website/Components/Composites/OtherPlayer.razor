@@ -1,0 +1,9 @@
+﻿<div class="other-player-container">
+    <Participant ParticipantInfo="Player"></Participant>
+    @if (Player.Score is not null)
+    {
+        <span class="other-player-card">
+            <Card Value="@(RevealCard ? Player.Score : null)" ClickDisabled></Card>
+        </span>
+    }
+</div>

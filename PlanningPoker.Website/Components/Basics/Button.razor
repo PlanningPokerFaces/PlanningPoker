@@ -1,0 +1,12 @@
+<button type="@(ButtonType == ButtonType.Submit ? "submit" : "button")" class="@(Large ? "large" : string.Empty)" onclick="@OnClick" disabled="@Disabled" @attributes="AdditionalAttributes">
+    @if (LeadingIcon is not null)
+    {
+        <span class="leading-icon @(RotateLeadingIcon ? "rotating" : string.Empty)">
+            <Icon Type="@LeadingIcon.Value"></Icon>
+        </span>
+    }
+    @if (Title is not null)
+    {
+        <span>@Title</span>
+    }
+</button>

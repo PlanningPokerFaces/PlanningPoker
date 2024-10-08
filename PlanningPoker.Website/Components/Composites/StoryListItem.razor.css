@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    width: 20px;
+}
+
+.icon ::deep svg {
+    width: 20px;
+    height: 20px;
+}
+
+.title {
+    width: 80%;
+    text-align: end;
+    margin-left: 10px;
+    line-height: 20px;
+}
+
+.selected {
+    background-color: lightgreen;
+}

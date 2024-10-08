@@ -1,0 +1,24 @@
+﻿.other-player-container {
+    padding: 5px;
+    position: relative;
+
+    & > .other-player-card {
+        position: absolute;
+        top: -11px;
+        right: -5px;
+        rotate: 20deg;
+        width: 25%;
+        height: 20%;
+        background-color: aquamarine;
+    }
+}
+
+.other-player-card ::deep div.card {
+    width: 100%;
+    height: 100%;
+    font-size: medium;
+}
+
+.other-player-card ::deep .card .card-value {
+    font-size: medium;
+}

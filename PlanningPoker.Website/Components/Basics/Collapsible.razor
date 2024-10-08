@@ -1,0 +1,11 @@
+﻿<div class="collapsible-container">
+    <div class="title" onclick="@(new Func<object, bool>(_ => isCollapsed = !isCollapsed))">
+        @Title
+        <span class="icon">
+            @(isCollapsed ? "\u02c5" : "\u02c4")
+        </span>
+    </div>
+    <div class="collapsible-content @(isCollapsed ? "is-collapsed" : "")">
+        @ChildContent
+    </div>
+</div>

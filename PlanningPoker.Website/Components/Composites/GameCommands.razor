@@ -1,0 +1,26 @@
+@using PlanningPoker.Core.Entities
+@using PlanningPoker.Infrastructure.Images
+@using PlanningPoker.Website.Components.Basics
+
+<div class="game-commands-container">
+    @if (!Revealed)
+    {
+        <Button Title="Reveal" OnClick="OnReveal" LeadingIcon="IconType.Visibility" Disabled="@(PokerGameData.GameState is not (GameState.FirstVoted or GameState.AllVoted))"></Button>
+        <Button Title="Skip" OnClick="OnSkip" LeadingIcon="IconType.MoveDown" Disabled="@(PokerGameData.GameState == GameState.NoStorySelected)"></Button>
+    }
+    else
+    {
+        <Button Title="Replay" OnClick="OnReplay" LeadingIcon="IconType.Replay"></Button>
+        <EditForm Model="SetScoreModel" FormName="SetScore" OnValidSubmit="_ => OnSetScore.InvokeAsync(PossibleScores.ScoreDatas[SetScoreModel.Index])">
+            <div class="set-score-container">
+                <Button Title="Set Score" ButtonType="ButtonType.Submit" LeadingIcon="IconType.PokerChip"></Button>
+                <InputSelect class="input-field" @bind-Value="SetScoreModel.Index">
+                    @foreach (var possibleScore in PossibleScores.ScoreDatas)
+                    {
+                        <option value="@PossibleScores.ScoreDatas.IndexOf(possibleScore)">@possibleScore.ToString()</option>
+                    }
+                </InputSelect>
+            </div>
+        </EditForm>
+    }
+</div>

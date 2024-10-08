@@ -1,0 +1,61 @@
+﻿.team-capacity-container {
+    width: 50%;
+    margin-top: 16px;
+    margin-left: 200px;
+}
+
+.progress {
+    height: 24px;
+    border-radius: 12px;
+    background-color: lightgray;
+    cursor: pointer;
+    position: relative;
+}
+
+.progress-bar {
+    height: 84%;
+    color: var(--md-custom-on-surface-positive);
+    background-color: var(--md-custom-surface-positive);
+    border-radius: 12px;
+    text-align: end;
+    padding-right: 10px;
+    padding-top: 4px;
+
+    &:hover {
+        color: var(--md-custom-on-surface-positive-highlighted);
+        background-color: var(--md-custom-surface-positive-highlighted);
+    }
+
+    &.over-capacity {
+        color: var(--md-custom-on-surface-negative);
+        background-color: var(--md-custom-surface-negative);
+
+        &:hover {
+            color: var(--md-custom-on-surface-negative-highlighted);
+            background-color: var(--md-custom-surface-negative-highlighted);
+        }
+    }
+}
+
+.progress-info {
+    margin-top: 5px;
+    padding-left: 5px;
+    text-align: start;
+
+    input.number {
+        width: 50px;
+    }
+
+    .edit-capacity {
+        cursor: pointer;
+    }
+}
+
+.inline-edit {
+    width: 50px;
+    padding: 2px;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    font-size: 1em;
+}

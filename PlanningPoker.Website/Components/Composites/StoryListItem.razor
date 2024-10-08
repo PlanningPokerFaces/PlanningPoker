@@ -1,0 +1,17 @@
+@using PlanningPoker.Infrastructure.Images
+@using PlanningPoker.Website.Components.Basics
+<div class="container">
+    <span class="icon">
+        @if (IsSkipped)
+        {
+            <Icon Type="IconType.MoveDown"></Icon>
+        }
+    </span>
+    <span class="icon">
+        @if (IsEstimated)
+        {
+            <Icon Type="IconType.TaskAlt"></Icon>
+        }
+    </span>
+    <span class="title">@StoryData.Title</span>
+</div>

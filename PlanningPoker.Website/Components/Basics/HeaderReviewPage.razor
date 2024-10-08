@@ -1,0 +1,14 @@
+@using PlanningPoker.Infrastructure.Images
+@using PlanningPoker.Website.Components.Layout
+<header>
+    <ErrorBoundaryWithDetails>
+        <div class="game-infos">
+            <Icon Type="IconType.BookmarkFlag"></Icon>
+            <span>@CurrentSprintTitle</span>
+        </div>
+        <div class="user-info">
+            <ThemeSwitcher/>
+            <Button Title="Exit" OnClick="LeaveReview" LeadingIcon="IconType.Exit"></Button>
+        </div>
+    </ErrorBoundaryWithDetails>
+</header>

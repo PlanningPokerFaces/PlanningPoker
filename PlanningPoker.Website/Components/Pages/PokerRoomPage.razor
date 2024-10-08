@@ -1,0 +1,42 @@
+﻿@page "/pokerroom/{sprintId}"
+@using PlanningPoker.Core.Entities
+@using PlanningPoker.Infrastructure.Images
+@using PlanningPoker.UseCases.Data
+@using PlanningPoker.Website.Components.Basics
+@using PlanningPoker.Website.Components.Composites
+
+<CascadingValue Value="@PokerGameData">
+    <aside>
+        <ErrorBoundaryWithDetails>
+            <StoriesOfCurrentSprint Stories="@(PokerGameData?.Stories ?? [])"
+                                    UpdateViewSettings="@(async c => await UpdateViewSettings(c))"
+                                    ViewSettings="ViewSettings"
+                                    Disabled="@(DisableAsideCommands)">
+            </StoriesOfCurrentSprint>
+            <Button Title="Reload Issues from GitLab"
+                    OnClick="@(async () => await ReloadStoriesAsync())"
+                    RotateLeadingIcon="IsFetchingStories" LeadingIcon="IconType.Sync"
+                    Disabled="@(DisableAsideCommands)">
+            </Button>
+        </ErrorBoundaryWithDetails>
+    </aside>
+    <article aria-label="poker-table">
+        <ErrorBoundaryWithDetails>
+            <StoryDetails Story="PokerGameData?.CurrentStory"/>
+        </ErrorBoundaryWithDetails>
+        <ErrorBoundaryWithDetails>
+            <PokerTable
+                ActivePlayer="@(CurrentParticipant as PlayerData)"
+                OtherPlayers="@(PokerGameData?.Players.Where(p => p.Id != CurrentParticipant?.Id).ToList() ?? [])"
+                Revealed="@(PokerGameData?.GameState == GameState.Revealed)"
+                SprintId="@SprintId"
+                Median="PokerGameData?.Median"
+                Average="PokerGameData?.Average"
+                PossibleScores="possibleScores"/>
+        </ErrorBoundaryWithDetails>
+        <ErrorBoundaryWithDetails>
+            <TeamCapacity SprintTeamCapacity="@(PokerGameData?.TeamCapacity ?? default)" VotedStoryPoints="@(PokerGameData?.VotedStoryPoints ?? default)" SprintId=@SprintId/>
+        </ErrorBoundaryWithDetails>
+    </article>
+    <script src="js/confettiLauncher.js"></script>
+</CascadingValue>

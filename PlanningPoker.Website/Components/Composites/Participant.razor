@@ -1,0 +1,14 @@
+@using PlanningPoker.Infrastructure.Images
+@using PlanningPoker.Website.Components.Basics
+<div class="participant-container @(Compact ? "compact" : string.Empty)">
+    <img class="participant-avatar @(Compact ? "compact" : string.Empty)" src="@ParticipantInfo.AvatarUrl" alt="@ParticipantInfo.Name"/>
+    <span class="scrum-master @(IsScrumMaster ? "visible" : string.Empty)">
+        <Icon Type="IconType.WorkspacePremium"></Icon>
+    </span>
+    <p>@ParticipantInfo.Name</p>
+    @if (Compact)
+    {
+        <p> - </p>
+    }
+    <p>@RoleName</p>
+</div>

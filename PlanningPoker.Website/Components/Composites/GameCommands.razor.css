@@ -1,0 +1,27 @@
+.game-commands-container {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    gap: 10px;
+}
+
+.game-commands-actions {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin: 5px;
+}
+
+.set-score-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+::deep .input-field {
+    border-radius: 26px;
+    height: 46px;
+}

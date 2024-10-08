@@ -1,0 +1,12 @@
+.summary {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    gap: 40px;
+
+    span {
+        border: 1px solid gray;
+        padding: 8px 10px;
+        border-radius: 15px;
+    }
+}

@@ -1,0 +1,83 @@
+@using Bunit
+@using Microsoft.Extensions.DependencyInjection
+@using Moq
+@using NUnit.Framework
+@using NUnit.Framework.Legacy
+@using PlanningPoker.Infrastructure.Images
+@using PlanningPoker.UseCases.Data
+@using PlanningPoker.Website.Components.Composites
+@using TestContext = Bunit.TestContext
+@inherits TestContext
+@attribute [TestFixture]
+@attribute [TestOf(typeof(OtherPlayer))]
+@attribute [Category("UI Components")]
+
+@code {
+
+    [Test]
+    public void HasPlayer_RendersPlayer()
+    {
+        // Arrange
+        using var ctx = new TestContext();
+        ctx.Services.AddSingleton(new Mock<IIconMarkupProvider>().Object);
+        var player = new PlayerData(Id: "RandomId", Name: "Hugo");
+        var cut = ctx.Render(@<OtherPlayer Player="player"/>);
+
+        // Act
+        var valuesFromHtml = cut.FindAll(".other-player-container").Select(i => i.TextContent).Single();
+
+        // Assert
+        StringAssert.Contains("Hugo", valuesFromHtml);
+    }
+
+    [Test]
+    public void HasNoScore_RendersNoCard()
+    {
+        // Arrange
+        using var ctx = new TestContext();
+        ctx.Services.AddSingleton(new Mock<IIconMarkupProvider>().Object);
+        var player = new PlayerData(Id: "RandomId", Name: "Hugo", Score: null);
+        var cut = ctx.Render(@<OtherPlayer Player="player" RevealCard="false"/>);
+
+        // Act
+        var scoreCardElement = cut.FindAll(".card").SingleOrDefault();
+
+        // Assert
+        Assert.That(scoreCardElement, Is.Null);
+    }
+
+    [Test]
+    public void HasScore_IsNotRevealed_RendersCardWithoutScore()
+    {
+        // Arrange
+        using var ctx = new TestContext();
+        ctx.Services.AddSingleton(new Mock<IIconMarkupProvider>().Object);
+        var player = new PlayerData(Id: "RandomId", Name: "Hugo", Score: 12.34m);
+        var cut = ctx.Render(@<OtherPlayer Player="player" RevealCard="false"/>);
+
+        // Act
+        var scoreCardElement = cut.FindAll(".card").SingleOrDefault();
+
+        // Assert
+        Assert.That(scoreCardElement, Is.Not.Null);
+        StringAssert.DoesNotContain("12.34", scoreCardElement.TextContent);
+    }
+
+    [Test]
+    public void HasScore_IsRevealed_RendersCardWithScore()
+    {
+        // Arrange
+        using var ctx = new TestContext();
+        ctx.Services.AddSingleton(new Mock<IIconMarkupProvider>().Object);
+        var player = new PlayerData(Id: "RandomId", Name: "Hugo", Score: 12.34m);
+        var cut = ctx.Render(@<OtherPlayer Player="player" RevealCard="true"/>);
+
+        // Act
+        var scoreCardElement = cut.FindAll(".card").SingleOrDefault();
+
+        // Assert
+        Assert.That(scoreCardElement, Is.Not.Null);
+        StringAssert.Contains("12.34", scoreCardElement.TextContent);
+    }
+
+}

@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="coverlet.collector"/>
+        <PackageReference Include="GitLabApiClient"/>
+        <PackageReference Include="Microsoft.NET.Test.Sdk"/>
+        <PackageReference Include="NUnit"/>
+        <PackageReference Include="NUnit.Analyzers"/>
+        <PackageReference Include="NUnit3TestAdapter"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Using Include="NUnit.Framework"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\PlanningPoker.Core.Test\PlanningPoker.Core.Test.csproj"/>
+        <ProjectReference Include="..\PlanningPoker.Core\PlanningPoker.Core.csproj"/>
+        <ProjectReference Include="..\PlanningPoker.Infrastructure\PlanningPoker.Infrastructure.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="DataProvider\GitLab\Setup\GitlabTestDataGroupLabels.json">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+          <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+          <TargetPath>GitLabTestDataGroupLabels.json</TargetPath>
+        </None>
+        <None Update="DataProvider\GitLab\Setup\GitLabTestDataIssues.json">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+          <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+          <TargetPath>GitLabTestDataIssues.json</TargetPath>
+        </None>
+        <None Update="DataProvider\GitLab\Setup\GitLabTestDataProjects.json">
+          <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+          <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+          <TargetPath>GitLabTestDataProjects.json</TargetPath>
+        </None>
+    </ItemGroup>
+
+</Project>

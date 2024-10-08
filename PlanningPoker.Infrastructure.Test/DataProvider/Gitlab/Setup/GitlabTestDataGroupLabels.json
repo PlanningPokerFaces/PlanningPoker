@@ -1,0 +1,182 @@
+[
+    {
+        "id": 5928,
+        "name": "DoNotDeleteThisGroupLabelPlease",
+        "description": "Might be used in integration tests",
+        "description_html": "Might be used in integration tests",
+        "text_color": "#FFFFFF",
+        "color": "#6699cc",
+        "subscribed": false
+    },
+    {
+        "id": 6162,
+        "name": "Garbage",
+        "description": "",
+        "description_html": "",
+        "text_color": "#FFFFFF",
+        "color": "#ed9121",
+        "subscribed": false
+    },
+    {
+        "id": 6160,
+        "name": "Resetable",
+        "description": "",
+        "description_html": "",
+        "text_color": "#FFFFFF",
+        "color": "#808080",
+        "subscribed": false
+    },
+    {
+        "id": 6256,
+        "name": "Scrum: Bug",
+        "description": "Bugs",
+        "description_html": "Bugs",
+        "text_color": "#FFFFFF",
+        "color": "#c21e56",
+        "subscribed": false
+    },
+    {
+        "id": 5968,
+        "name": "Scrum: Epic",
+        "description": "An Epic can be defined as a big chunk of work that has one common objective. It could be a feature, customer request or business requirement. In backlog, it is a placeholder for a required feature with few lines of description. It tells compactly about final output of user needs. In the beginning, it may not contain all the details that team needs to work on. These details are defined in User Stories. An epic usually takes more than one sprint to complete",
+        "description_html": "An Epic can be defined as a big chunk of work that has one common objective. It could be a feature, customer request or business requirement. In backlog, it is a placeholder for a required feature with few lines of description. It tells compactly about final output of user needs. In the beginning, it may not contain all the details that team needs to work on. These details are defined in User Stories. An epic usually takes more than one sprint to complete",
+        "text_color": "#FFFFFF",
+        "color": "#5843ad",
+        "subscribed": false
+    },
+    {
+        "id": 5969,
+        "name": "Scrum: Extra Task",
+        "description": "extra task",
+        "description_html": "extra task",
+        "text_color": "#FFFFFF",
+        "color": "#5843ad",
+        "subscribed": false
+    },
+    {
+        "id": 5970,
+        "name": "Scrum: Grooming Task",
+        "description": "after grooming",
+        "description_html": "after grooming",
+        "text_color": "#FFFFFF",
+        "color": "#5843ad",
+        "subscribed": false
+    },
+    {
+        "id": 5971,
+        "name": "Scrum: SP 0",
+        "description": "Number of estimated story points for the task",
+        "description_html": "Number of estimated story points for the task",
+        "text_color": "#FFFFFF",
+        "color": "#9400d3",
+        "subscribed": false
+    },
+    {
+        "id": 5972,
+        "name": "Scrum: SP 1",
+        "description": "Number of estimated story points for the task",
+        "description_html": "Number of estimated story points for the task",
+        "text_color": "#FFFFFF",
+        "color": "#9400d3",
+        "subscribed": false
+    },
+    {
+        "id": 5973,
+        "name": "Scrum: SP 100",
+        "description": "Number of estimated story points for the task",
+        "description_html": "Number of estimated story points for the task",
+        "text_color": "#FFFFFF",
+        "color": "#9400d3",
+        "subscribed": false
+    },
+    {
+        "id": 5974,
+        "name": "Scrum: SP 13",
+        "description": "Number of estimated story points for the task",
+        "description_html": "Number of estimated story points for the task",
+        "text_color": "#FFFFFF",
+        "color": "#9400d3",
+        "subscribed": false
+    },
+    {
+        "id": 5975,
+        "name": "Scrum: SP 2",
+        "description": "Number of estimated story points for the task",
+        "description_html": "Number of estimated story points for the task",
+        "text_color": "#FFFFFF",
+        "color": "#9400d3",
+        "subscribed": false
+    },
+    {
+        "id": 5976,
+        "name": "Scrum: SP 20",
+        "description": "Number of estimated story points for the task",
+        "description_html": "Number of estimated story points for the task",
+        "text_color": "#FFFFFF",
+        "color": "#9400d3",
+        "subscribed": false
+    },
+    {
+        "id": 5977,
+        "name": "Scrum: SP 3",
+        "description": "Number of estimated story points for the task",
+        "description_html": "Number of estimated story points for the task",
+        "text_color": "#FFFFFF",
+        "color": "#9400d3",
+        "subscribed": false
+    },
+    {
+        "id": 5978,
+        "name": "Scrum: SP 40",
+        "description": "Number of estimated story points for the task",
+        "description_html": "Number of estimated story points for the task",
+        "text_color": "#FFFFFF",
+        "color": "#9400d3",
+        "subscribed": false
+    },
+    {
+        "id": 5979,
+        "name": "Scrum: SP 5",
+        "description": "Number of estimated story points for the task",
+        "description_html": "Number of estimated story points for the task",
+        "text_color": "#FFFFFF",
+        "color": "#9400d3",
+        "subscribed": false
+    },
+    {
+        "id": 5980,
+        "name": "Scrum: SP 8",
+        "description": "Number of estimated story points for the task",
+        "description_html": "Number of estimated story points for the task",
+        "text_color": "#FFFFFF",
+        "color": "#9400d3",
+        "subscribed": false
+    },
+    {
+        "id": 5981,
+        "name": "Scrum: SP ½",
+        "description": "Number of estimated story points for the task",
+        "description_html": "Number of estimated story points for the task",
+        "text_color": "#FFFFFF",
+        "color": "#9400d3",
+        "subscribed": false
+    },
+    {
+        "id": 5982,
+        "name": "Scrum: User Story",
+        "description": "A user story is a very high-level definition of a requirement, containing just enough information so that the developers can produce a reasonable estimate of the effort to implement it",
+        "description_html": "A user story is a very high-level definition of a requirement, containing just enough information so that the developers can produce a reasonable estimate of the effort to implement it",
+        "text_color": "#FFFFFF",
+        "color": "#ad4363",
+        "subscribed": false
+    },
+    {
+        "id": 5983,
+        "name": "Scrum: tb 16h",
+        "description": "Timeboxed task",
+        "description_html": "Timeboxed task",
+        "text_color": "#FFFFFF",
+        "color": "#9400d3",
+        "subscribed": false
+    }
+]

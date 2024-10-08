@@ -1,0 +1,55 @@
+.pokertable {
+    padding: 5px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--box-shadow-around);
+    min-width: fit-content;
+    flex: 0.9;
+    justify-content: space-between;
+    border-radius: 200px;
+    color: var(--md-sys-color-on-primary-container);
+    background-color: var(--md-sys-color-primary-container);
+}
+
+.other-players {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+::deep .other-players > .other-player-container:nth-child(15) { top: 80px; order: 1; }
+::deep .other-players > .other-player-container:nth-child(13) { top: 60px; order: 2; }
+::deep .other-players > .other-player-container:nth-child(11) { top: 40px; order: 3; }
+::deep .other-players > .other-player-container:nth-child(9) { top: 20px; order: 4; }
+::deep .other-players > .other-player-container:nth-child(7) { top: 0px; order: 5; }
+::deep .other-players > .other-player-container:nth-child(5) { top: 0px; order: 6; }
+::deep .other-players > .other-player-container:nth-child(3) { top: 0px; order: 7; }
+::deep .other-players > .other-player-container:nth-child(1) { top: 0px; order: 8; }
+::deep .other-players > .other-player-container:nth-child(2) { top: 0px; order: 9; }
+::deep .other-players > .other-player-container:nth-child(4) { top: 0px; order: 10; }
+::deep .other-players > .other-player-container:nth-child(6) { top: 0px; order: 11; }
+::deep .other-players > .other-player-container:nth-child(8) { top: 20px; order: 12; }
+::deep .other-players > .other-player-container:nth-child(10) { top: 40px; order: 13; }
+::deep .other-players > .other-player-container:nth-child(12) { top: 60px; order: 14; }
+::deep .other-players > .other-player-container:nth-child(14) { top: 80px; order: 15; }
+
+.game-result {
+    width: 400px;
+    margin: 5px;
+    height: 30%;
+    visibility: hidden;
+
+    &.visible {
+        visibility: visible;
+    }
+}
+
+.active-player {
+    width: fit-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}

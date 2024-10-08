@@ -1,0 +1,54 @@
+header {
+    position: sticky;
+    height: var(--height-header);
+    box-shadow: var(--box-shadow-below);
+
+    z-index: 99;
+    justify-content: space-evenly;
+
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+
+    align-items: center;
+}
+
+main {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+#user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+#game-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}

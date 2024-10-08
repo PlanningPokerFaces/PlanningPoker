@@ -1,0 +1,76 @@
+﻿@page "/"
+@layout NoHeader
+@using PlanningPoker.Infrastructure.Images
+@using PlanningPoker.UseCases.Data
+@using PlanningPoker.Website.Components.Basics
+@using PlanningPoker.Website.Components.Layout
+
+<div class="landing-page">
+    <div class="game-type">
+        <h2>Planning Session</h2>
+        <ToggleSwitch CurrentState="isSwitchedToReview" OnToggleSwitched="OnSwitchToReview" aria-label="on-toggle-to-review"></ToggleSwitch>
+        <h2>Sprint Review</h2>
+    </div>
+    <article>
+        <EditForm @ref="editForm" Model="ParticipantCreationModel" FormName="ParticipantCreation" OnValidSubmit="Submit">
+            @if (!isSwitchedToReview)
+            {
+                <DataAnnotationsValidator/>
+                <div>
+                    <label>Name</label>
+                    <div class="input-field-container">
+                        <InputTextInstantValidation class="input-field" aria-label="input-name" @bind-Value="ParticipantCreationModel.Name"/>
+                    </div>
+                    <label>Role</label>
+                    <InputSelect class="input-field" @bind-Value="ParticipantCreationModel.Role">
+                        <option checked="@(ParticipantCreationModel.Role == ParticipantRole.Player)" value="Player">
+                            Player
+                        </option>
+                        @if (canJoinAsScrumMaster)
+                        {
+                            <option checked="@(ParticipantCreationModel.Role == ParticipantRole.ScrumMaster)" value="ScrumMaster">
+                                Scrum Master
+                            </option>
+                        }
+                        <option checked="@(ParticipantCreationModel.Role == ParticipantRole.Spectator)" value="Spectator">
+                            Spectator
+                        </option>
+                    </InputSelect>
+                </div>
+            }
+
+            <label>Milestone</label>
+            <InputSelect class="input-field" @bind-Value="ParticipantCreationModel.SelectedMilestoneId" disabled="@MilestoneSelectionDisabled">
+                <option value="">Select a Milestone</option>
+                @if (sprints is not null)
+                {
+                    @foreach (var milestone in sprints)
+                    {
+                        <option value="@milestone.Id">@milestone.Title</option>
+                    }
+                }
+            </InputSelect>
+            <div class="validation-summary-container">
+                <ValidationSummary/>
+            </div>
+            <div class="button-container">
+                <Button Title="@JoinButtonText" ButtonType="ButtonType.Submit" Disabled="@JoinButtonDisabled" LeadingIcon="IconType.Groups" aria-label="button-join" Large></Button>
+                @if (currentSprint is not null)
+                {
+                    <Button Title="@($"Close Running Game: {currentSprint!.Title}")" OnClick="@OnCloseRunningGame" LeadingIcon="IconType.Cancel" Large></Button>
+                }
+            </div>
+        </EditForm>
+        <div class="avatar @(isSwitchedToReview ? "hidden" : "")">
+            @if (avatarUrl is null)
+            {
+                <div class="avatar-image-placeholder"></div>
+            }
+            else
+            {
+                <img class="avatar-image" src="@avatarUrl" alt="This you?"/>
+            }
+            <Button Title="Change Avatar" OnClick="OnChangeAvatar" LeadingIcon="IconType.Shuffle" Large></Button>
+        </div>
+    </article>
+</div>

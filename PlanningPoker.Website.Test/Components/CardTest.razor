@@ -1,0 +1,98 @@
+@using Bunit
+@using NUnit.Framework
+@using NUnit.Framework.Legacy
+@using PlanningPoker.Website.Components.Composites
+@using TestContext = Bunit.TestContext
+@inherits TestContext
+@attribute [TestFixture]
+@attribute [TestOf(typeof(Card))]
+@attribute [Category("UI Components")]
+
+@code {
+
+    [Test]
+    public void HasNoValue_RendersEmptyCard()
+    {
+        // Arrange
+        var cut = Render(@<Card Value="null"/>);
+
+        // Act
+        var valuesFromHtml = cut.FindAll(".card-value");
+
+        // Assert
+        CollectionAssert.IsEmpty(valuesFromHtml);
+    }
+
+    [Test]
+    public void HasValue_RendersValue()
+    {
+        // Arrange
+        var cut = Render(@<Card Value="12"/>);
+
+        // Act
+        var valuesFromHtml = cut.FindAll(".card-value").Select(i => i.TextContent).ToList();
+
+        // Assert
+        Assert.That(valuesFromHtml.Count, Is.EqualTo(1));
+        Assert.That(valuesFromHtml.Single(), Is.EqualTo("12"));
+    }
+
+    [Test]
+    public void IsFlippedToValue_CallbackIsRetrieved_CardIsFlipped()
+    {
+        // Arrange
+        var clickEventCalled = false;
+        var cardIsFlipped = false;
+        var cut = Render(@<Card Value="0" CardChosen="value => { clickEventCalled = true; cardIsFlipped = value; }"/>);
+
+        // Act
+        var renderedCard = cut.Find(".card");
+        renderedCard.Click();
+
+        // Assert
+        Assert.That(clickEventCalled, Is.True);
+        Assert.That(cardIsFlipped, Is.True);
+    }
+
+    [Test]
+    public void IsFlippedTwice_CallbackIsRetrieved_CardIsNotFlipped()
+    {
+        // Arrange
+        var clickEventCounter = 0;
+        var cardIsFlipped = false;
+        var cut = RenderComponent<Card>(parameters => parameters
+            .Add(p => p.Value, 0)
+            .Add(p => p.IsChosen, false)
+            .Add(p => p.CardChosen, value =>
+            {
+                clickEventCounter++;
+                cardIsFlipped = value;
+            }));
+
+        // Act
+        var renderedCard = cut.Find(".card");
+        renderedCard.Click();
+        cut.SetParametersAndRender(parameters => parameters.Add(p => p.IsChosen, true));
+        renderedCard.Click();
+
+        // Assert
+        Assert.That(clickEventCounter, Is.EqualTo(2));
+        Assert.That(cardIsFlipped, Is.False);
+    }
+
+    [Test]
+    public void IsClickDisabledAndClicked_NothingHappens()
+    {
+        // Arrange
+        var cardIsFlipped = false;
+        var cut = Render(@<Card Value="0" CardChosen="value => { cardIsFlipped = value; }" ClickDisabled/>);
+
+        // Act
+        var renderedCard = cut.Find(".card");
+        renderedCard.Click();
+
+        // Assert
+        Assert.That(cardIsFlipped, Is.False);
+    }
+
+}

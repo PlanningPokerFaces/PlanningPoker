@@ -1,0 +1,54 @@
+@using Bunit
+@using Microsoft.Extensions.DependencyInjection
+@using Moq
+@using NUnit.Framework
+@using PlanningPoker.Core.Entities
+@using PlanningPoker.Infrastructure.Images
+@using PlanningPoker.UseCases.Data
+@using PlanningPoker.Website.Components.Composites
+@using TestContext = Bunit.TestContext
+@inherits TestContext
+@attribute [TestFixture]
+@attribute [TestOf(typeof(GameCommands))]
+@attribute [Category("UI Components")]
+
+@code {
+    private static PokerGameData PokerGameData => new("Id", "SprintId", null, null, GameState.FirstVoted, null, [], [], [], 45.0, 30.0);
+
+    [Test]
+    public void RevealIsClicked_CallbackIsRetrieved()
+    {
+        // Arrange
+        using var ctx = new TestContext();
+        ctx.Services.AddSingleton(new Mock<IIconMarkupProvider>().Object);
+        var revealEventReceived = false;
+        var cut = ctx.Render(@<CascadingValue Value="@PokerGameData"><GameCommands OnReveal="_ => revealEventReceived = true" /></CascadingValue>);
+
+        var revealButton = cut.FindAll("button").Single(b => b.TextContent == "Reveal");
+
+        // Act
+        revealButton.Click();
+
+        // Assert
+        Assert.That(revealEventReceived, Is.True);
+    }
+
+    [Test]
+    public void SkipIsClicked_CallbackIsRetrieved()
+    {
+        // Arrange
+        using var ctx = new TestContext();
+        ctx.Services.AddSingleton(new Mock<IIconMarkupProvider>().Object);
+        var skipEventReceived = false;
+        var cut = ctx.Render(@<CascadingValue Value="@PokerGameData"><GameCommands OnSkip="_ => skipEventReceived = true" /></CascadingValue>);
+
+        var skipButton = cut.FindAll("button").Single(b => b.TextContent == "Skip");
+
+        // Act
+        skipButton.Click();
+
+        // Assert
+        Assert.That(skipEventReceived, Is.True);
+    }
+}
+

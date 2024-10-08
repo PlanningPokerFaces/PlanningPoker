@@ -1,0 +1,21 @@
+.spectators {
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+    height: fit-content;
+}
+
+.spectator {
+    display: flex;
+    flex-direction: column;
+    max-width: 120px;
+    margin-left: 5px;
+}
+
+img {
+    border: gray 1px solid;
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+    background-color: lightgreen;
+}

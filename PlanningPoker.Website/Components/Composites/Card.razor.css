@@ -1,0 +1,44 @@
+.card {
+    outline: var(--md-sys-color-on-secondary-container) 2px solid;
+    border-radius: 4px;
+    height: 80px;
+    width: 50px;
+    box-shadow: var(--box-shadow-below);
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--md-sys-color-on-background);
+    background-color: var(--md-sys-color-background);
+    transition: background 300ms;
+
+    &.disabled {
+        pointer-events: none;
+        cursor: not-allowed;
+        background-color: lightgrey;
+        outline: grey 2px solid;
+        color: grey;
+    }
+
+    &:hover {
+        color: var(--md-sys-color-on-surface-variant);
+        background-color: var(--md-sys-color-surface-variant);
+    }
+
+    &:active, &.flipped {
+        color: var(--md-sys-color-on-primary);
+        background-color: var(--md-sys-color-primary);
+        transition: background 0s;
+    }
+}
+
+.card-value {
+    text-align: center;
+    font-size: x-large;
+
+    overflow: hidden;
+    padding: 2px;
+}

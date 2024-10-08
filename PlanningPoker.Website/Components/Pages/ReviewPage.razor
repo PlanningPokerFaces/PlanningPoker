@@ -1,0 +1,41 @@
+@page "/review/{SprintId}"
+@using PlanningPoker.Infrastructure.Images
+@using PlanningPoker.Website.Components.Basics
+@using PlanningPoker.Website.Components.Composites
+@using PlanningPoker.Website.Components.Layout
+@layout ReviewPageLayout
+
+<aside>
+    <ErrorBoundaryWithDetails>
+        <div class="toggle-switch">
+            <h4>Projects</h4>
+            <ToggleSwitch CurrentState="ShowAllStories" OnToggleSwitched="OnToggleShowAllStories" aria-label="on-toggle-to-all-stories"></ToggleSwitch>
+            <h4>All stories of sprint</h4>
+        </div>
+        @if (!ShowAllStories)
+        {
+            <ProjectsForReview Projects="GetProjects()" ProjectChanged="OnProjectSelected" ProjectSelected="@ProjectSelected"></ProjectsForReview>
+        }
+        <Button Title="Reload Issues from GitLab" OnClick="@(async () => await ReloadStoriesAsync())" RotateLeadingIcon="IsFetchingStories" LeadingIcon="IconType.Sync"></Button>
+    </ErrorBoundaryWithDetails>
+</aside>
+<article aria-label="review-table">
+    <Collapsible Title="Unstarted">
+        @if (unstartedReviewData is not null)
+        {
+            <StoriesForReview ShowProjectTitle="ShowAllStories" ReviewData="unstartedReviewData"/>
+        }
+    </Collapsible>
+    <Collapsible Title="Ongoing">
+        @if (ongoingReviewData is not null)
+        {
+            <StoriesForReview ShowProjectTitle="ShowAllStories" ReviewData="ongoingReviewData"/>
+        }
+    </Collapsible>
+    <Collapsible InitialStateCollapsed="@false" Title="Completed">
+        @if (completedReviewData is not null)
+        {
+            <StoriesForReview ShowProjectTitle="ShowAllStories" ReviewData="completedReviewData" aria-label="completed-collapsible"/>
+        }
+    </Collapsible>
+</article>

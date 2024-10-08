@@ -1,0 +1,39 @@
+﻿# Based on:
+# https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/dotNET-Core.gitlab-ci.yml
+image: mcr.microsoft.com/playwright/dotnet:v1.47.0-jammy
+
+variables:
+    OBJECTS_DIRECTORY: 'obj'
+    NUGET_PACKAGES_DIRECTORY: '.nuget'
+    SOURCE_CODE_PATH: '*/*/'
+
+cache:
+    key: "$CI_JOB_STAGE-$CI_COMMIT_REF_SLUG"
+    paths:
+        - '$SOURCE_CODE_PATH$OBJECTS_DIRECTORY/project.assets.json'
+        - '$SOURCE_CODE_PATH$OBJECTS_DIRECTORY/*.csproj.nuget.*'
+        - '$NUGET_PACKAGES_DIRECTORY'
+    policy: pull-push
+
+before_script:
+    - 'dotnet restore --packages $NUGET_PACKAGES_DIRECTORY'
+
+dotnet-build:
+    stage: build
+    rules:
+        -   if: $CI_PIPELINE_SOURCE == 'merge_request_event'  # Run for all changes to a merge request's source branch
+        -   if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH       # Run for all changes to the default branch
+    script:
+        - 'dotnet build --no-restore'
+
+dotnet-test:
+    stage: test
+    variables:
+        Gitlab__Api__Url: '$Gitlab__Api__Url'
+        Gitlab__Api__Pat: '$Gitlab__Api__Pat'
+        Gitlab__Repository__GroupName: '$Gitlab__Repository__GroupName'
+    rules:
+        -   if: $CI_PIPELINE_SOURCE == 'merge_request_event'  # Run for all changes to a merge request's source branch
+        -   if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH       # Run for all changes to the default branch
+    script:
+        - 'dotnet test --no-restore --logger "console;verbosity=detailed"'

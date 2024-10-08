@@ -1,0 +1,41 @@
+/*
+We use the standard color tokens of Google's Material Design 3 (https://m3.material.io/)
+The colors can be exported here: https://material-foundation.github.io/material-theme-builder/
+
+ => This file contains all tokens which are not according to above's export */
+
+:root {
+    --box-shadow-below: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.16) 0px 0px 14px 0px, rgba(0, 0, 0, 0.08) 0px 4px 8px 0px;
+    --box-shadow-around: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    --height-header: 70px;
+    --md-custom-surface-positive: var(--md-ref-custom-lightgreen);
+    --md-custom-on-surface-positive: var(--md-ref-custom-lightgreen-contrast);
+    --md-custom-surface-positive-highlighted: var(--md-ref-custom-mediumgreen);
+    --md-custom-on-surface-positive-highlighted: var(--md-ref-custom-mediumgreen-contrast);
+    --md-custom-surface-negative: var(--md-ref-custom-lightred);
+    --md-custom-on-surface-negative: var(--md-ref-custom-lightred-contrast);
+    --md-custom-surface-negative-highlighted: var(--md-ref-custom-mediumred);
+    --md-custom-on-surface-negative-highlighted: var(--md-ref-custom-mediumred-contrast);
+
+    --md-ref-custom-lightgreen: #A5D6A7;
+    --md-ref-custom-lightgreen-contrast: #1B5E20;
+    --md-ref-custom-mediumgreen: #66BB6A;
+    --md-ref-custom-mediumgreen-contrast: #004D40;
+    --md-ref-custom-lightred: #EF9A9A;
+    --md-ref-custom-lightred-contrast: #B71C1C;
+    --md-ref-custom-mediumred: #E57373;
+    --md-ref-custom-mediumred-contrast: #C62828;
+}
+
+[data-theme="dark"] {
+    --box-shadow-below: rgba(255, 255, 255, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0) 0px 0px 0px 0px, rgba(255, 255, 255, 0.16) 0px 0px 14px 0px, rgba(255, 255, 255, 0.08) 0px 4px 8px 0px;
+    --box-shadow-around: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    --md-custom-surface-positive: var(--md-ref-custom-mediumgreen);
+    --md-custom-on-surface-positive: var(--md-ref-custom-mediumgreen-contrast);
+    --md-custom-surface-positive-highlighted: var(--md-ref-custom-lightgreen);
+    --md-custom-on-surface-positive-highlighted: var(--md-ref-custom-lightgreen-contrast);
+    --md-custom-surface-negative: var(--md-ref-custom-mediumred);
+    --md-custom-on-surface-negative: var(--md-ref-custom-mediumred-contrast);
+    --md-custom-surface-negative-highlighted: var(--md-ref-custom-lightred);
+    --md-custom-on-surface-negative-highlighted: var(--md-ref-custom-lightred-contrast);
+}

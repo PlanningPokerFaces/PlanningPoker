@@ -1,0 +1,30 @@
+﻿.collapsible-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    height: 30px;
+    width: 100px;
+    border: 1px solid var(--md-sys-color-on-background);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    cursor: pointer;
+    background-color: var(--color-surface-background);
+}
+
+.title .icon {
+    font-size: 20px;
+}
+
+.collapsible-content {
+    padding: 10px;
+}
+
+.collapsible-content.is-collapsed {
+    display: none;
+}

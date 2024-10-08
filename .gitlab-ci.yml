@@ -1,0 +1,11 @@
+stages:
+  - build
+  - test
+  - docker-build
+  - docker-push
+  - deploy
+
+include: 
+  - 'pipelines/build-test.yml'
+  - 'pipelines/deploy-gcp.yml'
+  - 'pipelines/deploy-gitlab.yml'

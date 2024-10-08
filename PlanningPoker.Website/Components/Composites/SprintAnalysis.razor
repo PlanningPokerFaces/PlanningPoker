@@ -1,0 +1,35 @@
+﻿<h2>SprintAnalysis</h2>
+@if (sprintSummary is null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <div class="table-responsive">
+        <table class="table custom-table">
+            <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Story Points</th>
+                <th>Timeboxed Hours</th>
+                <th>Bugs in SP</th>
+                <th>Extra Task SP</th>
+                <th>Extra Task tb</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var summary in sprintSummary)
+            {
+                <tr>
+                    <td class="bold-column">@summary.ProjectName.Trim()</td>
+                    <td>@summary.TotalStoryPoints</td>
+                    <td>@summary.TotalTimeBoxedHours</td>
+                    <td>@summary.TotalBugs</td>
+                    <td>@summary.TotalExtraTaskStoryPoints</td>
+                    <td>@summary.TotalExtraTaskTimeBoxedHours</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+}

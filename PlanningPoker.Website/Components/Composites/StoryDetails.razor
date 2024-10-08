@@ -1,0 +1,32 @@
+﻿@using PlanningPoker.Infrastructure.Images
+@using PlanningPoker.Website.Components.Basics
+
+<div class="story-details-container">
+    @if (Story is not null)
+    {
+        <div class="story-details-title">
+            <div class="story-details-title-text">
+                <span>@Story.Title @(ShowProjectTitle ? $" (Project: {Story.ProjectName})" : string.Empty)</span>
+                @if (Story.Url is not null)
+                {
+                    <a href="@Story.Url" target="_blank"><Icon Type="IconType.Link"></Icon></a>
+                }
+            </div>
+
+            <div class="story-details-labels">
+                @foreach (var label in Story.Labels)
+                {
+                    <IconLabel Text=@label.Name ColorHexCode=@label.ColorHexCode></IconLabel>
+                }
+            </div>
+        </div>
+        if (ShowDescription)
+        {
+            <div class="story-details-description">@GetShortenedStoryDescription()</div>
+        }
+    }
+    else
+    {
+        <h3>No Story Selected!</h3>
+    }
+</div>

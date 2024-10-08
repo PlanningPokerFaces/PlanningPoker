@@ -1,0 +1,10 @@
+.icon-label {
+    background-color: var(--icon-label-colorhexcode);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 2px 10px 2px 5px;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

@@ -1,0 +1,38 @@
+<div class="container @(Disabled ? "disabled" : string.Empty)">
+    <div class="project-dropdown">
+        <label for="projectSelect">Select a Project:</label>
+        <select id="projectSelect" @onchange="OnProjectSelected" value="@ViewSettings?.SelectedProjectId">
+            <option value="">-- Show all stories --</option>
+            @foreach (var project in GetProjects())
+            {
+                <option value="@project.ProjectId">@project.ProjectName</option>
+            }
+        </select>
+    </div>
+
+    <ul>
+        @if (!string.IsNullOrEmpty(ViewSettings?.SelectedProjectId))
+        {
+            var storiesByProject = GetStoriesByProject().FirstOrDefault(p => p.ProjectId == ViewSettings.SelectedProjectId);
+
+            if (storiesByProject.ProjectName is not null)
+            {
+                @foreach (var story in storiesByProject.Stories)
+                {
+                    <li class="story-title @(ViewSettings.SelectedStoryId is not null && story.Id == ViewSettings.SelectedStoryId ? "selected" : string.Empty)" @onclick="_ => Select(story)">
+                        <StoryListItem StoryData="story"/>
+                    </li>
+                }
+            }
+    }
+    else
+    {
+        @foreach (var story in Stories)
+            {
+                <li class="@(ViewSettings?.SelectedStoryId is not null && story.Id == ViewSettings.SelectedStoryId ? "selected" : string.Empty)" @onclick="_ => Select(story)">
+                    <StoryListItem StoryData="story"/>
+                </li>
+            }
+        }
+    </ul>
+</div>

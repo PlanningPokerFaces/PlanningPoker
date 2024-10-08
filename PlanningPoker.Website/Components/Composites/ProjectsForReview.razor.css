@@ -1,0 +1,28 @@
+.container {
+    padding: 4px;
+    width: 100%;
+}
+
+ul {
+    margin-top: 30px;
+    padding: 4px;
+
+    li {
+        list-style-type: none;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 9999px;
+        min-height: 20px;
+
+        &.selected {
+            cursor: default;
+            color: var(--md-sys-color-on-secondary-container);
+            background-color: var(--md-sys-color-secondary-container);
+        }
+
+        &:hover {
+            color: var(--md-sys-color-on-surface-variant);
+            background-color: var(--md-sys-color-surface-variant);
+        }
+    }
+}

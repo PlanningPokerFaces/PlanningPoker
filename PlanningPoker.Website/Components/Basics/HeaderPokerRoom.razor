@@ -1,0 +1,22 @@
+@using PlanningPoker.Infrastructure.Images
+@using PlanningPoker.Website.Components.Composites
+@using PlanningPoker.Website.Components.Layout
+<header>
+    <ErrorBoundaryWithDetails>
+        <div class="game-infos">
+            <Icon Type="IconType.BookmarkFlag"></Icon>
+            <span>@CurrentSprintTitle</span>
+        </div>
+        <div class="spectators">
+            <Spectators SpectatorPersons="@(PokerGameData?.Spectators)"></Spectators>
+        </div>
+        <div class="user-info">
+            @if (CurrentParticipant is not null)
+            {
+                <Participant ParticipantInfo="@CurrentParticipant" Compact></Participant>
+            }
+            <ThemeSwitcher/>
+            <Button Title="Exit" OnClick="@OnLeaveGame" LeadingIcon="IconType.Exit"></Button>
+        </div>
+    </ErrorBoundaryWithDetails>
+</header>

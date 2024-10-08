@@ -1,0 +1,40 @@
+.story-details-container {
+    .story-details-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: var(--md-sys-color-on-background) 2px solid;
+        padding: 4px;
+        height: 30px;
+        align-items: end;
+
+        .story-details-title-text {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            line-height: 11px;
+        }
+
+        .story-details-labels {
+            text-align: end;
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+        }
+    }
+
+    .story-details-description {
+        font-style: italic;
+        padding: 4px;
+        color: grey;
+        height: 47px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+a {
+    color: var(--md-sys-color-on-background);
+}
+

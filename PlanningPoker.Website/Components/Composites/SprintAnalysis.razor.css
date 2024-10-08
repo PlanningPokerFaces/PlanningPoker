@@ -1,0 +1,43 @@
+﻿.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom-table thead th {
+    font-weight: bold;
+    border-bottom: 2px solid darkgray;
+    text-align: left;
+    padding: 8px;
+    border-right: 1px solid darkgray;
+}
+
+.custom-table tbody td {
+    border-bottom: 1px solid darkgray;
+    border-right: 1px solid darkgray;
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 8px;
+    vertical-align: middle;
+    text-align: left;
+    border-left: 1px solid darkgray;
+}
+
+.custom-table .bold-column {
+    font-weight: bold;
+}
+
+.custom-table tbody tr:last-child td {
+    border-bottom: 2px solid darkgray;
+}
+
+.custom-table tbody tr td:last-child,
+.custom-table thead th:last-child {
+    border-right: none;
+}
+
+h2{
+    font-weight: bold !important;
+    font-size: 18px !important;
+}

@@ -1,0 +1,50 @@
+@using Bunit
+@using NUnit.Framework
+@using NUnit.Framework.Legacy
+@using PlanningPoker.UseCases.Data
+@using PlanningPoker.Website.Components.Composites
+@using TestContext = Bunit.TestContext
+@attribute [TestFixture]
+@attribute [TestOf(typeof(Spectators))]
+@attribute [Category("UI Components")]
+
+@code {
+
+    [Test]
+    public void HasSpectators_RendersNames()
+    {
+        // Arrange
+        using var ctx = new TestContext();
+        List<string> names = ["Megan", "William", "Henry"];
+        var spectators = GetSpectators(names);
+        var cut = ctx.Render(@<Spectators SpectatorPersons="spectators"/>);
+
+        // Act
+
+        // Assert
+        var namesFromHtml = cut.FindAll(".spectator>p").Select(i => i.TextContent).ToList();
+        Assert.That(namesFromHtml.Count, Is.EqualTo(3));
+        CollectionAssert.AreEqual(names, namesFromHtml);
+    }
+
+    [Test]
+    public void HasSpectators_RendersAvatars()
+    {
+        // Arrange
+        using var ctx = new TestContext();
+        var spectators = GetSpectators(["Megan", "William", "Henry"]);
+        var cut = ctx.Render(@<Spectators SpectatorPersons="spectators"/>);
+
+        // Act
+
+        // Assert
+        var images = cut.FindAll("img");
+        Assert.That(images.Count, Is.EqualTo(3));
+    }
+
+    private static IList<SpectatorData> GetSpectators(List<string> names)
+    {
+        return names.Select(name => new SpectatorData(Id: "RandomId", Name: name, AvatarUrl: "http://some-url.com/")).ToList();
+    }
+
+}

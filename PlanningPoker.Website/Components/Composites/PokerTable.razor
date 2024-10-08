@@ -1,0 +1,27 @@
+<div class="pokertable">
+    <div class="other-players">
+        @foreach (var player in OtherPlayers)
+        {
+            <OtherPlayer Player="player" RevealCard="Revealed"/>
+        }
+    </div>
+    <div class="game-result @(Revealed ? "visible" : string.Empty)">
+        <GameResult Average="Average ?? 0" Median="Median ?? 0"></GameResult>
+    </div>
+    <div class="active-player">
+        @if (ActivePlayer is not null)
+        {
+            <ActivePlayer ChosenCard="ActivePlayer.Score" OnCardFlipped="OnCardFlippedAsync" CardValues="GameRulesProvider.GetValidCardValues()"/>
+            @if (UserRightsService.CanCommandGame(ActivePlayer))
+            {
+                <GameCommands
+                    Revealed="@Revealed"
+                    PossibleScores="@PossibleScores"
+                    OnReveal="OnRevealAsync"
+                    OnSkip="OnSkipAsync"
+                    OnReplay="OnReplayAsync"
+                    OnSetScore="score => OnSetScoreAsync(score)"/>
+            }
+        }
+    </div>
+</div>

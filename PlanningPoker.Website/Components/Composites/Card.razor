@@ -1,0 +1,8 @@
+<div class="card @(ClickDisabled ? "disabled" : string.Empty) @(IsChosen ? "flipped" : string.Empty)" @onclick="@OnClick">
+    @if (Value is not null)
+    {
+        <div class="card-value">
+            @Value
+        </div>
+    }
+</div>

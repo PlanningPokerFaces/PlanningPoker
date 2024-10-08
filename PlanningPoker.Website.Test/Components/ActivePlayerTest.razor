@@ -1,0 +1,65 @@
+@using Bunit
+@using NUnit.Framework
+@using NUnit.Framework.Legacy
+@using PlanningPoker.Website.Components.Composites
+@using TestContext = Bunit.TestContext
+@inherits TestContext
+@attribute [TestFixture]
+@attribute [TestOf(typeof(ActivePlayer))]
+@attribute [Category("UI Components")]
+
+@code {
+
+    [Test]
+    public void HasCardValues_RendersCards()
+    {
+        // Arrange
+        List<decimal> cardValues = [1.20m, 4.44m, 22, 33];
+        var cut = Render(@<ActivePlayer CardValues="cardValues"/>);
+
+        // Act
+        var valuesFromHtml = cut.FindAll(".card-value").Select(i => i.TextContent).ToList();
+
+        // Assert
+        Assert.That(valuesFromHtml.Count, Is.EqualTo(4));
+        CollectionAssert.Contains(valuesFromHtml, "1.20");
+        CollectionAssert.Contains(valuesFromHtml, "4.44");
+        CollectionAssert.Contains(valuesFromHtml, "22");
+        CollectionAssert.Contains(valuesFromHtml, "33");
+    }
+
+    [Test]
+    public void CardIsFlipped_CallbackIsRetrieved()
+    {
+        // Arrange
+        List<decimal> cardValues = [1.20m, 4.44m, 22, 33];
+        decimal? retrievedValue = 0;
+        var cut = Render(@<ActivePlayer CardValues="cardValues" OnCardFlipped="v => retrievedValue = v"/>);
+
+        // Act
+        var card = cut.FindAll(".card-value").Single(c => c.TextContent == "4.44");
+        card.Click();
+
+        // Assert
+        Assert.That(retrievedValue, Is.EqualTo(4.44m));
+    }
+
+    [Test]
+    public void CardIsFlippedAfterAnotherOne_FirstOneIsUnflipped_ValueOfSecondCounts()
+    {
+        // Arrange
+        List<decimal> cardValues = [1.20m, 4.44m, 22, 33];
+        decimal? retrievedValue = 0;
+        var cut = Render(@<ActivePlayer CardValues="cardValues" OnCardFlipped="@(v => retrievedValue = v)"/>);
+
+        var card444HtmlElement = cut.FindAll(".card-value").Single(c => c.TextContent == "4.44");
+        var card22HtmlElement = cut.FindAll(".card-value").Single(c => c.TextContent == "22");
+
+        // Act
+        card444HtmlElement.Click();
+        card22HtmlElement.Click();
+
+        // Assert
+        Assert.That(retrievedValue, Is.EqualTo(22));
+    }
+}
