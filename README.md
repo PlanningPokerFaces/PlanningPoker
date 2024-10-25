@@ -82,13 +82,10 @@ The main difference is the more verbose error messages in 'Test' profile.
 
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-### Contact
+### Maintenance
 
-For any inquiries, please contact mas.planning.poker@gmail.com.
+This solution was developed as part of a Master Thesis and is no longer actively maintained. Support and bug fixes are not provided. Pull requests may be reviewed and merged sporadically at the author's discretion.
 
 Happy Planning! 🎉
-
-### Latest Test Release
-https://planningpoker-2uvtdui2sq-oa.a.run.app
 
 
