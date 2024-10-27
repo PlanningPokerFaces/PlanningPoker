@@ -40,7 +40,7 @@ overwritten:
 
 1. **Clone the Repository**
    ```bash
-   git clone https://gitlab.ost.ch/pokerfaces/planningpoker.git
+   git clone https://github.com/PlanningPokerFaces/planningpoker.git
    cd planningpoker/PlanningPoker.Website
 
 2. **Build and Run the Application**
@@ -57,7 +57,7 @@ The main difference is the more verbose error messages in 'Test' profile.
 
 1. **Clone the Repository**
    ```bash
-   git clone https://gitlab.ost.ch/pokerfaces/planningpoker.git
+   git clone https://github.com/PlanningPokerFaces/planningpoker.git
    cd planningpoker
 
 2. **Build the Docker Image**
